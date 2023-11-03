@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: rgb(129, 129, 201);
+}
+a {
+  text-decoration: none;
+}
+div {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+
+p {
+  /* налаштування для параграфів */
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+
+.main {
+  /* налаштування для основного блоку */
+  display: flex;
+  justify-content: center;
+}
+.personal-data-container2 {
+  /* налаштування для блоку інформації */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+  padding: 3px 6px 69px 6px;
+  background: rgba(51, 51, 82, 1);
+}
+
+.border-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 92px;
+  padding-right: 4px;
+  padding-left: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-container {
+  /* налаштування для блоку з картинкою */
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  max-width: initial;
+  height: 68px;
+  border: none;
+  border-radius: 34px;
+  object-fit: cover;
+}
+
+.img-profile-logo {
+  /* налаштування для фото профілю */
+  border-radius: 10px;
+}
+
+.personal-data-container1 {
+  /* налаштування для блоку з особистою інформацією */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 11px;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 3.25px;
+}
+.achievement-title1 {
+  /* налаштування для блоку з досягненями */
+  flex: 0 0 auto;
+  font: 500 10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal-data-container {
+  /* налаштування для блоку з особистою інформацією */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -1.75px;
+}
+.name-container {
+  /* налаштування для блоку з інформацією про імя та прізвище */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 26px;
+  padding-left: 24px;
+}
+.contact-info {
+  /* налаштування для блоку з контактною інформацією */
+  flex: 0 0 auto;
+  font: 500 7px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.07px;
+}
+.contact-divider1 {
+  /* налаштування для розмежувача для контактної інформації */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact-divider2 {
+  /* налаштування для розмежувача для контактної інформації */
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.my-name {
+  /* налаштування для інформацією про імя та прізвище */
+  flex: 0 0 auto;
+  align-self: stretch;
+  margin-top: 5.75px;
+  font: 500 7px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.07px;
+}
+.personal-info {
+  /* налаштування для блоку з особистою інформацією */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 19px;
+  padding-left: 18px;
+}
+.svg-container {
+  /* налаштування для іконок */
+  display: flex;
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  color: rgba(217, 223, 232, 1);
+}
+.address-container {
+  /* налаштування для блоку з інформацією про місцезнаходження */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-top: 1px;
+}
+.address-divider {
+  /* налаштування для розмежувача для інформації про місцезнаходження */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-top: 0.30000000000000004px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.address-label {
+  /* налаштування для заголовку про адресу */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  align-self: stretch;
+  width: 49px;
+  margin-top: 5px;
+  font: 500 7px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.07px;
+}
+.personal-details {
+  /* налаштування блоку з особистою інформацією */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 13px;
+  padding-left: 11px;
+  margin-top: 1.75px;
+}
+.svg-container1 {
+  /* налаштування для іконок */
+  display: flex;
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  color: rgba(226, 230, 238, 1);
+}
+.contact-info1 {
+  /* налаштування для тексту з контактною інформацією */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: stretch;
+  justify-content: flex-start;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 4.75px;
+}
+.contact-info2 {
+  /* налаштування для тексту з контактною інформацією #2 */
+  flex: 0 0 auto;
+  align-self: stretch;
+  margin-top: 7px;
+  font: 500 7px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.07px;
+}
+.language-container {
+  /* налаштування для блоку з інформацією про мови */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 5.75px;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-top: 5.75px;
+  padding-right: 4px;
+  padding-bottom: 5.75px;
+  margin-top: 10px;
+  margin-right: -3px;
+  margin-left: -3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.job-experience-section2 {
+  /* налаштування для блоку з інформацією про досвід роботи #2 */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 300px;
+  padding: 19.5px 10px 35px;
+}
+.job-experience-section {
+  /* налаштування для блоку з інформацією про досвід роботи */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.job-experience-section1 {
+  /* налаштування для блоку з інформацією про досвід роботи */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.experience-heading {
+  /* налаштування для блоку з інформацією про досвід роботи ( Посада ) */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 83px;
+  font: 500 10px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.1px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.job-duration {
+  /* налаштування для блоку з інформацією про досвід роботи ( термін роботи ) */
+  flex: 0 0 auto;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 0.6px;
+}
+.border-box-container {
+  /* налаштування самого блоку для інформацією про досвід роботи */
+  box-sizing: border-box;
+  width: 76px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.job-experience {
+  /* налаштування для блоку з текстом інформації про досвід роботи */
+  flex: 0 0 auto;
+  margin-top: 3.5px;
+}
+.job-card2 {
+  /* налаштування для блоку з інформацією про досвід роботи #2 */
+  display: flex;
+  flex-direction: row;
+  gap: 3.5px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+.event-date {
+  /* налаштування для блоку з інформацією про досвід роботи ( термін роботи ) */
+  flex: 0 0 auto;
+  font: 400 7px DM Sans;
+  color: rgba(172, 177, 195, 1);
+  letter-spacing: 0.07px;
+}
+.svg-container {
+  /* налаштування для іконки місцезнаходження */
+  display: flex;
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  color: rgba(217, 223, 232, 1);
+}
+.job-experience3 {
+  /* налаштування для блоку з інформацією про досвід роботи #3 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2px;
+}
+.frontend-card {
+  flex: 0 0 auto;
+}
+.image-container {
+  /* налаштування для блоків з логотипом */
+  box-sizing: border-box;
+  display: block;
+  width: 20px;
+  max-width: initial;
+  height: 21px;
+}
+
+.img-apple-logo {
+  /* налаштування для логотипу компанії #1 */
+  max-width: 20px;
+  max-height: 20px;
+  display: flex;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.job-card {
+  /* налаштування для блоку з інформацією про роботe #1 */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-bottom: 3px;
+  margin-left: 3px;
+}
+.designer-title {
+  /* налаштування для заголовку роботи */
+  flex: 0 0 auto;
+  font: 400 6px DM Sans;
+  color: rgba(172, 177, 195, 1);
+  letter-spacing: 0.06px;
+}
+.apple-product-designer {
+  /* налаштування для блоку з інформацією про посаду на роботі #1 */
+  flex: 0 0 auto;
+  margin-top: -2px;
+  font: 500 7px DM Sans;
+  color: rgba(226, 230, 238, 1);
+}
+
+.job-experience1 {
+  /* налаштування для блоку з інформацією про час роботи #1 */
+  display: flex;
+  flex-direction: row;
+  gap: 3.5px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 23px;
+  padding-left: 23px;
+  margin-top: 4px;
+}
+
+.img-google-logo {
+  /* налаштування для логотипу компанії #2 */
+  max-width: 20px;
+  max-height: 20px;
+  display: flex;
+  border-style: none;
+  border-radius: 5px;
+  background: white;
+}
+
+.google-job-title {
+  /* налаштування для заголовку роботи */
+  flex: 0 0 auto;
+  font: 500 7px DM Sans;
+  color: rgba(226, 230, 238, 1);
+}
+
+.job-experience2 {
+  /* налаштування для блоку з інформацією про час роботи #2 */
+  display: flex;
+  flex-direction: row;
+  gap: 3.5px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin-top: 3px;
+}
+
+.img-tesla-logo {
+  /* налаштування для логотипу компанії #3 */
+  max-width: 20px;
+  max-height: 20px;
+  display: flex;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.job-card1 {
+  /* налаштування для блоку з інформацією про роботу #3 */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-bottom: 3px;
+  margin-left: 4px;
+}
+.tesla-container {
+  /* налаштування для самого блоку з інформацією про роботу #3 */
+  flex: 0 0 auto;
+  padding-right: 17.5px;
+}
+.tesla-text {
+  /* налаштування тексту для блоку з інформацією про роботу #3 */
+  font: 500 7px DM Sans;
+  color: rgba(226, 230, 238, 1);
+}
+.education-container {
+  /* налаштування для блоку з інформацією про освіту */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 7px;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 22.5px;
+}
+.education-title1 {
+  /* налаштування для заголовку з інформацією про освіту */
+  flex: 0 0 auto;
+  text-align: center;
+  padding-bottom: 3px;
+  max-width: 76px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.education-title {
+  /* налаштування для заголовку з інформацією про освіту */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 83px;
+  font: 500 10px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+.education-level {
+  /* налаштування тексту інформацією про рівень освіти #1 */
+  flex: 0 0 auto;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-top: -4.25px;
+}
+.education-level1 {
+  /* налаштування тексту інформацією про рівень освіти #2 */
+  flex: 0 0 auto;
+  font: 500 10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.1px;
+}
+.content-container {
+  /* налаштування блоку для розмішення тексу в інформаціЇ про рівень освіти #1 */
+  flex: 0 0 auto;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+.outfit-text {
+  /* налаштування тексту для блоку для тексту в інформації про рівень освіти #1 */
+  box-sizing: border-box;
+  max-width: 266px;
+  font: 500 7px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  letter-spacing: 0.07px;
+}
+
+.flex-column-container {
+  /* налаштування для блоку з інформацією про досягнення */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 17.5px;
+}
+
+.achievement-title {
+  /* налаштування заголовку з інформацією про досягнення */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 83px;
+  font: 500 10px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-bottom: 3px;
+  max-width: 76px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievement-container {
+  /* налаштування блоку для подальшого додавання тексту чи інформації про досягнення */
+  flex: 0 0 auto;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-top: 1px;
+}
+
+.hobby-title {
+  /* налаштування заголовку з інформацією про хобі */
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 83px;
+  font: 500 10px/10px Outfit;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-bottom: 3px;
+  max-width: 76px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hobby-section {
+  /* налаштування блоку для подальшого додання тексту чи інформації про хобі */
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 39px;
+}
+.hobby-container {
+  /* налаштування блоку для інформації про хобі */
+  flex: 0 0 auto;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-top: 2.75px;
+}
